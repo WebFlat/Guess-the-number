@@ -20,14 +20,15 @@ section {
 
 h3 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 48px;
 }
 
 input {
-    width: 30%;
+    max-width: 30%;
+    min-width: 260px;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 15px;
     border: 2px solid transparent;
     text-transform: uppercase;
     transition: all .1s ease-in;
@@ -52,7 +53,7 @@ button {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 25px;
     transition: all .1s ease-in;
     outline: transparent;
 }
@@ -67,7 +68,7 @@ button:active {
 
 .answer {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -118,5 +119,28 @@ img {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h3 {
+        font-size: 35px;
+    }
+    @keyframes yep {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.2);
+        }
+        50% {
+            transform: scale(.9);
+        }
+        75% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 }
