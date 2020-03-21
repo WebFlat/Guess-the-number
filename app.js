@@ -6,7 +6,7 @@ function randOut() {
     num = document.getElementById('usernum').value;
     out = document.getElementById('out');
     img = document.getElementById('img');
-    if (isNaN(num)) {
+    if (isNaN(num) || num == '') {
         out.innerHTML = 'Введи число!!!';
         out.style.animation = 'jitter 2s';
         img.setAttribute('src', './img/sad.png');
